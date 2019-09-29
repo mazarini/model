@@ -40,7 +40,7 @@ validate: security composer twig yaml stan cs
 ############################################
 
 7.1:
-	sudo update-alternatives --set php /usr/bin/php7.2
+	sudo update-alternatives --set php /usr/bin/php7.1
 
 7.2:
 	sudo update-alternatives --set php /usr/bin/php7.2
