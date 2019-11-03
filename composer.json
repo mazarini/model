@@ -1,11 +1,11 @@
 {
-    "name": "mazarini/model",
+    "name": "mazarini/crud",
     "type": "symfony-bundle",
-    "description": "Model for symfony dev",
+    "description": "crud for symfony dev",
     "keywords": [
         "symfony"
     ],
-    "homepage": "https://github.com/mazarini/model",
+    "homepage": "https://github.com/mazarini/crud",
     "license": "GPL-3.0-or-later",
     "authors": [
         {

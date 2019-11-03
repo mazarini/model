@@ -1,7 +1,7 @@
 
-# mazarini/model
+# mazarini/crud
 
-[![Build Status](https://travis-ci.org/mazarini/model.svg?branch=master)](https://travis-ci.org/mazarini/model)
+[![Build Status](https://travis-ci.org/mazarini/crud.svg?branch=master)](https://travis-ci.org/mazarini/crud)
 
 Some files to init project
 - .php_cs.dist
