@@ -12,4 +12,8 @@ return [
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true, 'test' => true],
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['dev' => true],
+    Mazarini\PackageBundle\MazariniPackageBundle::class => ['all' => true],
+    Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle::class => ['all' => true],
+    Mazarini\BootstrapBundle\MazariniBootstrapBundle::class => ['all' => true],
+    Mazarini\PaginationBundle\MazariniPaginationBundle::class => ['all' => true],
 ];
