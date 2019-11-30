@@ -1,3 +1,5 @@
-{% block form %}
-	<button class="btn">{{ button_label|default('Save') }}</button>
-{% endblock form %}
+{{ form_start(form) }}
+{{ form_widget(form) }}
+<button class="btn">{{ button_label|default('Save') }}</button>
+<a href="{{ path('example_index') }}">back to list</a>
+{{ form_end(form) }}

@@ -20,7 +20,8 @@
         "ext-mbstring": "*",
         "mazarini/package": "^1.1",
         "symfony/dotenv": "^4.4|^5.0",
-        "symfony/flex": ">1.4.0-stable,<1.5.0-stable|>1.5.0-stable,<1.6.0-stable",
+        "symfony/flex": "<1.5.0-stable|^1.5.1-stable",
+        "symfony/form": "5.0.*",
         "symfony/orm-pack": "^1.0"
     },
     "require-dev": {
