@@ -73,8 +73,7 @@ before_install:
 
 install:
   - '[[ "$CONTROL" == "" ]] || composer global require friendsofphp/php-cs-fixer symfony/flex sensiolabs/security-checker friendsoftwig/twigcs phpstan/phpstan-symfony'
-  - composer install $SYMFONY_PHPUNIT_COMPOSER_OPTION
-  - '[[ "$INSTALL" == "install" ]] || composer update $SYMFONY_PHPUNIT_COMPOSER_OPTION'
+  - composer $INSTALL $SYMFONY_PHPUNIT_COMPOSER_OPTION
   - '[[ "$SYMFONY_PHPUNIT_COMPOSER_OPTION" == "" ]] || cp var/data/simple-phpunit.php vendor/symfony/phpunit-bridge/bin/simple-phpunit.php'
   - ./bin/phpunit install
 
