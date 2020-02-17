@@ -24,7 +24,7 @@ twig:
 	twigcs lib/Resources/views -vv
 
 yaml:
-	bin/console lint:yaml lib/Resources/config config phpstan.neon.dist .travis.yml
+	bin/console lint:yaml config lib/Resources/config phpstan.neon.dist .travis.yml
 
 cs:
 	php-cs-fixer fix
@@ -33,7 +33,7 @@ stan:
 	if [ ! -d "var/cache/phpunit" ]; then vendor/bin/simple-phpunit install -v; fi
 	phpstan analyse lib src tests --level max
 
-validate: security composer twig yaml stan cs
+validate: security composer twig yaml stan cs test
 
 ############################################
 #          P H P   V E R S I O N           #
@@ -81,7 +81,7 @@ stable:
 ############################################
 
 start:
-	symfony server:start
+	symfony server:start --no-tls
 
 stop:
 	symfony server:stop
@@ -104,8 +104,9 @@ dbinit:
 
 dbreset: dbdrop dbinit
 
-fixtures:
+fixtures: dbreset
 	bin/console doctrine:fixtures:load
+	cp var/data/sqlite.db var/data/origine.db
 
 ############################################
 #                T E S T S                 #
@@ -116,12 +117,14 @@ fixtures:
 clean:
 	bin/console cache:clear --env=test
 	bin/console cache:clear --env=dev
+	cp var/data/origine.db var/data/sqlite.db
 
 test:
-	vendor/bin/simple-phpunit -v
+	cp var/data/origine.db var/data/sqlite.db
+	bin/phpunit -v
 
 cover-text: clean
-	php7.4 vendor/bin/simple-phpunit -v --coverage-text
+	bin/phpunit -v --coverage-text
 
 cover: clean
-	php7.4 vendor/bin/simple-phpunit --coverage-html var/test-coverage
+	bin/phpunit --coverage-html var/test-coverage

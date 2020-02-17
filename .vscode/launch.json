@@ -25,6 +25,14 @@
             "program": "${workspaceFolder}/bin/phpunit",
             "cwd": "${workspaceFolder}",
             "port": 9000
+        },
+        {
+            "name": "Launch console",
+            "type": "php",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/console",
+            "cwd": "${workspaceFolder}",
+            "port": 9000
         }
     ]
 }
