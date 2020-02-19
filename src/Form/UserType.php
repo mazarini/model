@@ -2,14 +2,14 @@
 
 /*
  * Copyright (C) 2019-2020 Mazarini <mazarini@protonmail.com>.
- * This file is part of mazarini/dev.
+ * This file is part of mazarini/model.
  *
- * mazarini/dev is free software: you can redistribute it and/or
+ * mazarini/model is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
  *
- * mazarini/dev is distributed in the hope that it will be useful,
+ * mazarini/model is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
  * more details.
@@ -20,6 +20,7 @@
 namespace App\Form;
 
 use App\Entity\User;
+use Mazarini\UserBundle\Form\RepeatedPasswordType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
