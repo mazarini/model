@@ -1,20 +1,20 @@
 <?php
 
 /*
- * Copyright (C) 2019 Mazarini <mazarini@protonmail.com>.
- * This file is part of mazarini/test-bundle.
+ * Copyright (C) 2019-2020 Mazarini <mazarini@protonmail.com>.
+ * This file is part of mazarini/model.
  *
- * mazarini/test-bundle is free software: you can redistribute it and/or
+ * mazarini/model is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or (at your
  * option) any later version.
  *
- * mazarini/test-bundle is distributed in the hope that it will be useful,
+ * mazarini/model is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
  * more details.
  *
- * You should have received a copy of the GNU General Public License
+ * You should have received a copy of the GNU General Public License.
  */
 
 use App\Kernel;
@@ -24,11 +24,15 @@ use Symfony\Component\HttpFoundation\Request;
 
 require dirname(__DIR__).'/vendor/autoload.php';
 
-if (method_exists(Dotenv::class, 'bootEnv')) {
-    (new Dotenv())->bootEnv(dirname(__DIR__).'/.env');
-} elseif (method_exists(Dotenv::class, 'loadEnv')) {
-    // load all the .env files
-    (new Dotenv(false))->loadEnv(dirname(__DIR__).'/.env');
+if (Kernel::isOlder(50100)) {
+    $dotEnt = new Dotenv();
+    $method = 'bootEnv';
+} else {
+    $dotEnt = new Dotenv(false);
+    $method = 'loadEnv';
+}
+if (method_exists($dotenv, $method)) {
+    $dotenv->$method(dirname(__DIR__).'/.env');
 }
 
 if ($_SERVER['APP_DEBUG']) {
