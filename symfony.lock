@@ -101,15 +101,6 @@
     "jdorn/sql-formatter": {
         "version": "1.3.x-dev"
     },
-    "laminas/laminas-code": {
-        "version": "3.5.x-dev"
-    },
-    "laminas/laminas-eventmanager": {
-        "version": "3.3-dev"
-    },
-    "laminas/laminas-zendframework-bridge": {
-        "version": "1.1.x-dev"
-    },
     "mazarini/bootstrap-bundle": {
         "version": "1.0.x-dev"
     },
@@ -206,9 +197,6 @@
     "symfony/css-selector": {
         "version": "5.1-dev"
     },
-    "symfony/debug": {
-        "version": "v4.4.4"
-    },
     "symfony/debug-bundle": {
         "version": "4.1",
         "recipe": {
@@ -226,9 +214,6 @@
     },
     "symfony/dependency-injection": {
         "version": "5.1-dev"
-    },
-    "symfony/deprecation-contracts": {
-        "version": "2.1-dev"
     },
     "symfony/doctrine-bridge": {
         "version": "5.1-dev"
@@ -310,7 +295,7 @@
         }
     },
     "symfony/mime": {
-        "version": "v4.4.4"
+        "version": "v5.0.4"
     },
     "symfony/monolog-bridge": {
         "version": "5.1-dev"
@@ -348,17 +333,11 @@
             "tests/bootstrap.php"
         ]
     },
-    "symfony/polyfill-intl-grapheme": {
-        "version": "1.14-dev"
-    },
     "symfony/polyfill-intl-icu": {
         "version": "1.14-dev"
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.14.0"
-    },
-    "symfony/polyfill-intl-normalizer": {
-        "version": "1.14-dev"
     },
     "symfony/polyfill-mbstring": {
         "version": "1.14-dev"
@@ -370,9 +349,6 @@
         "version": "dev-master"
     },
     "symfony/property-access": {
-        "version": "5.1-dev"
-    },
-    "symfony/property-info": {
         "version": "5.1-dev"
     },
     "symfony/routing": {
@@ -417,9 +393,6 @@
         "version": "2.0-dev"
     },
     "symfony/stopwatch": {
-        "version": "5.1-dev"
-    },
-    "symfony/string": {
         "version": "5.1-dev"
     },
     "symfony/test-pack": {
