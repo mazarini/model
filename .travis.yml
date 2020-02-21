@@ -12,7 +12,6 @@ env:
     - COMPOSER_MEMORY_LIMIT=-1
     - CONTROL=
     - INSTALL="update"
-    - OPTION=
     - SYMFONY=
     - SYMFONY_DEPRECATIONS_HELPER=0
     - SYMFONY_PHPUNIT_DIR=./var/cache/phpunit
@@ -22,27 +21,26 @@ jobs:
   fast_finish: true
   include:
 
-#   Controle
+#   symfony version 4.4
     - php: 7.2
-      env: INSTALL="install"
-           CONTROL="YES"
+      env: SYMFONY="4.4.*"
+           SYMFONY_DEPRECATIONS_HELPER=0
 
 #   PHP version
+    - php: 7.2
+      env: INSTALL="install"
     - php: 7.3
       env: INSTALL="install"
     - php: 7.4
       env: INSTALL="install"
     - php: nightly
-      env: OPTION="nightly"
-           STABILITY="dev"
+      env: STABILITY="dev"
            SYMFONY_DEPRECATIONS_HELPER=8
 
-#   symfony version
-    - php: 7.2
-      env: SYMFONY="4.4.*"
-           SYMFONY_DEPRECATIONS_HELPER=0
+#   Controle
     - php: 7.2
       env: INSTALL="install"
+           CONTROL="YES"
 
 #   symfony dev version
     - php: 7.2
@@ -61,8 +59,7 @@ jobs:
 
 #   PHP version dev version
     - php: nightly
-      env: OPTION="nightly"
-           STABILITY="dev"
+      env: STABILITY="dev"
            SYMFONY_DEPRECATIONS_HELPER=8
 
 #   symfony dev version
@@ -86,12 +83,12 @@ before_install:
   - '[[ "$STABILITY" == "" ]] || composer config minimum-stability $STABILITY'
 
 install:
-  - '[[ "$OPTION" == "" ]] || phpenv global 7.4 && php -v'
+  - '[[ "TRAVIS_PHP_VERSION" != "nightly" ]] || phpenv global 7.2'
   - '[[ "$CONTROL" == "" ]] || composer global require friendsofphp/php-cs-fixer sensiolabs/security-checker friendsoftwig/twigcs phpstan/phpstan-symfony'
   - composer $INSTALL
   - ./bin/phpunit install
-  - '[[ "$OPTION" == "" ]] || phpenv global $OPTION && php -v'
   - cp var/data/origine.db var/data/sqlite.db
+  - '[[ "TRAVIS_PHP_VERSION" != "nightly" ]] || phpenv global nightly && php -v'
 script:
   - '[[ "$CONTROL" == "YES" ]] || ./bin/phpunit -v'
   - '[[ "$CONTROL" == "" ]] || ./bin/phpunit -v --coverage-text'
