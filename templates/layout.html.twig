@@ -1,11 +1,6 @@
 {# templates/layout.html.twig #}
 
-{% extends '@MazariniTest/layout.html.twig' %}
-
-{% block stylesheets %}
-	{{ parent() }}
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css"/>
-{% endblock stylesheets %}
+{% extends '@MazariniBootstrap/layout.html.twig' %}
 
 {% block first_bar_container %}
 	<div class="list-group">
@@ -19,13 +14,6 @@
 			<a href="{{ path('security_logout') }}" class=" list-group-item list-group-item-action">
 				Logout
 			</a>
-			<a href="{{ path('supplier_index') }}" class="list-group-item list-group-item-action">
-				Supplier
-			</a>
-			<a href="{{ path('stat_week') }}" class="list-group-item list-group-item-action">
-				Weekly stat
-			</a>
-
 		{% else %}
 			<a href="{{ path('security_login') }}" class="list-group-item list-group-item-action">
 				Login
@@ -38,13 +26,6 @@
 		{% endif %}
 	</div>
 {% endblock first_bar_container %}
-
-{% block javascripts %}
-	<script src="https://kit.fontawesome.com/6e0a7029cf.js" crossorigin="anonymous"></script>
-	{{ parent() }}
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
-{% endblock javascripts %}
 
 {% block modal %}
 	{% if data.isSetEntity %}
