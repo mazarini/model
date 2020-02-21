@@ -24,6 +24,11 @@ use Mazarini\UserBundle\DataFixtures\UserFixturesAbstract;
 class UserFixtures extends UserFixturesAbstract
 {
     /**
+     * @var int
+     */
+    protected $number = 0;
+
+    /**
      * getData.
      *
      * @return array<int,mixed>
@@ -32,9 +37,8 @@ class UserFixtures extends UserFixturesAbstract
     {
         return [
 //          [$name, $roles]
-            ['user', ['ROLE_USER']],
             ['admin', ['ROLE_ADMIN']],
-            ['doe', ['ROLE_USER']],
+            ['user', ['ROLE_USER']],
         ];
     }
 }

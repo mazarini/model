@@ -25,14 +25,14 @@ use Symfony\Component\HttpFoundation\Request;
 require dirname(__DIR__).'/vendor/autoload.php';
 
 if (Kernel::isOlder(50100)) {
-    $dotEnt = new Dotenv();
+    $dotEnv = new Dotenv();
     $method = 'bootEnv';
 } else {
-    $dotEnt = new Dotenv(false);
+    $dotEnv = new Dotenv(false);
     $method = 'loadEnv';
 }
-if (method_exists($dotenv, $method)) {
-    $dotenv->$method(dirname(__DIR__).'/.env');
+if (method_exists($dotEnv, $method)) {
+    $dotEnv->$method(dirname(__DIR__).'/.env');
 }
 
 if ($_SERVER['APP_DEBUG']) {

@@ -19,26 +19,12 @@
 
 namespace App\Controller;
 
-use Mazarini\ToolsBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
+use Mazarini\ToolsBundle\Controller\HomeControllerAbstract;
 
-/**
- * @Route("/")
- */
-class HomeController extends AbstractController
+class HomeController extends HomeControllerAbstract
 {
-    /**
-     * @Route("/", name="home_page", methods={"GET","POST"})
-     * @Route("/", name="homepage", methods={"GET","POST"})
-     */
-    public function home(Request $request): Response
+    protected function getRedirectUrl(): string
     {
-        if ($this->isGranted('ROLE_USER')) {
-            return $this->redirectToRoute('supplier_index');
-        }
-
-        return $this->redirectToRoute('security_login');
+        return $this->generateUrl('profile_show');
     }
 }

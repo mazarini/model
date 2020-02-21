@@ -20,20 +20,11 @@
 namespace App\Controller;
 
 use Mazarini\UserBundle\Controller\ProfileController as BaseController;
-use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 /**
  * @Route("/profile")
  */
 class ProfileController extends BaseController
 {
-    /*
-     public function __construct(RequestStack $requestStack, UrlGeneratorInterface $router)
-     {
-         parent::__construct($requestStack, $router);
-         $this->twigFolder = '@MazariniUser/profile/';
-     }
-     */
 }
