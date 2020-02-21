@@ -83,12 +83,12 @@ before_install:
   - '[[ "$STABILITY" == "" ]] || composer config minimum-stability $STABILITY'
 
 install:
-  - '[[ "TRAVIS_PHP_VERSION" != "nightly" ]] || phpenv global 7.2'
+  - '[[ "$TRAVIS_PHP_VERSION" != "nightly" ]] || phpenv global 7.2'
   - '[[ "$CONTROL" == "" ]] || composer global require friendsofphp/php-cs-fixer sensiolabs/security-checker friendsoftwig/twigcs phpstan/phpstan-symfony'
   - composer $INSTALL
   - ./bin/phpunit install
   - cp var/data/origine.db var/data/sqlite.db
-  - '[[ "TRAVIS_PHP_VERSION" != "nightly" ]] || phpenv global nightly && php -v'
+  - '[[ "$TRAVIS_PHP_VERSION" != "nightly" ]] || phpenv global nightly && php -v'
 script:
   - '[[ "$CONTROL" == "YES" ]] || ./bin/phpunit -v'
   - '[[ "$CONTROL" == "" ]] || ./bin/phpunit -v --coverage-text'
