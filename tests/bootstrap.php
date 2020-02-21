@@ -30,4 +30,6 @@ if (\App\Kernel::isOlder(50100)) {
 }
 if (method_exists($dotEnv, $method)) {
     $dotEnv->$method(dirname(__DIR__).'/.env');
+} else {
+    throw new LogicException(sprintf('Unknow method "%s::%s" : env not initialized', get_class($dotEnv), $method));
 }
