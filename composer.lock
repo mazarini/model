@@ -1055,12 +1055,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mazarini/bootstrap-bundle.git",
-                "reference": "e3c13ca319d4d7e0d28612338d4bd88eaa837f90"
+                "reference": "55b6966cc0b64c61dd1aed857f7e78214fe51968"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mazarini/bootstrap-bundle/zipball/e3c13ca319d4d7e0d28612338d4bd88eaa837f90",
-                "reference": "e3c13ca319d4d7e0d28612338d4bd88eaa837f90",
+                "url": "https://api.github.com/repos/mazarini/bootstrap-bundle/zipball/55b6966cc0b64c61dd1aed857f7e78214fe51968",
+                "reference": "55b6966cc0b64c61dd1aed857f7e78214fe51968",
                 "shasum": ""
             },
             "require": {
@@ -1084,6 +1084,7 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/orm": "*",
                 "mazarini/package": "^1.0",
+                "mazarini/pagination-bundle": "^0.9|^1.0@dev",
                 "mazarini/test-bundle": "^0.9|^1.0@dev",
                 "symfony/debug-pack": "^1.0",
                 "symfony/maker-bundle": "^1.14",
@@ -1119,7 +1120,7 @@
             "keywords": [
                 "symfony"
             ],
-            "time": "2020-02-20T08:04:24+00:00"
+            "time": "2020-03-11T20:30:16+00:00"
         },
         {
             "name": "mazarini/crud-bundle",
@@ -1127,12 +1128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mazarini/crud-bundle.git",
-                "reference": "17c23f603d4a4bd34385d3b896a5289441dfe029"
+                "reference": "d074ba9c9ee1c6099d60b3d1070bb800d8129bfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mazarini/crud-bundle/zipball/17c23f603d4a4bd34385d3b896a5289441dfe029",
-                "reference": "17c23f603d4a4bd34385d3b896a5289441dfe029",
+                "url": "https://api.github.com/repos/mazarini/crud-bundle/zipball/d074ba9c9ee1c6099d60b3d1070bb800d8129bfd",
+                "reference": "d074ba9c9ee1c6099d60b3d1070bb800d8129bfd",
                 "shasum": ""
             },
             "require": {
@@ -1191,7 +1192,7 @@
                 "pagination",
                 "symfony"
             ],
-            "time": "2020-02-20T13:14:32+00:00"
+            "time": "2020-03-11T20:43:08+00:00"
         },
         {
             "name": "mazarini/pagination-bundle",
@@ -1199,12 +1200,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mazarini/pagination-bundle.git",
-                "reference": "da12a8c1b31f060aa88468139c1b140e45386cf8"
+                "reference": "af9e5d450a4a6e2f0fa046772ecd5422c0176a83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mazarini/pagination-bundle/zipball/da12a8c1b31f060aa88468139c1b140e45386cf8",
-                "reference": "da12a8c1b31f060aa88468139c1b140e45386cf8",
+                "url": "https://api.github.com/repos/mazarini/pagination-bundle/zipball/af9e5d450a4a6e2f0fa046772ecd5422c0176a83",
+                "reference": "af9e5d450a4a6e2f0fa046772ecd5422c0176a83",
                 "shasum": ""
             },
             "require": {
@@ -1268,7 +1269,7 @@
                 "pagination",
                 "symfony"
             ],
-            "time": "2020-02-20T12:29:42+00:00"
+            "time": "2020-03-10T13:32:40+00:00"
         },
         {
             "name": "mazarini/tools-bundle",
@@ -1276,12 +1277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mazarini/tools-bundle.git",
-                "reference": "98fcf77fbb122774caea4dc352408905e6d0c90f"
+                "reference": "d89676c5895bd803b33c1f68aa32a6021e9edbff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mazarini/tools-bundle/zipball/98fcf77fbb122774caea4dc352408905e6d0c90f",
-                "reference": "98fcf77fbb122774caea4dc352408905e6d0c90f",
+                "url": "https://api.github.com/repos/mazarini/tools-bundle/zipball/d89676c5895bd803b33c1f68aa32a6021e9edbff",
+                "reference": "d89676c5895bd803b33c1f68aa32a6021e9edbff",
                 "shasum": ""
             },
             "require": {
@@ -1302,9 +1303,9 @@
             "require-dev": {
                 "doctrine/doctrine-bundle": "^2.0",
                 "doctrine/orm": "^2.7",
-                "laminas/laminas-code": "^3.4",
                 "mazarini/bootstrap-bundle": "^0.9|^1.0dev",
                 "mazarini/package": "^1.1",
+                "mazarini/pagination-bundle": "^1.0@dev",
                 "mazarini/test-bundle": "^0.9|^1.0dev",
                 "symfony/debug-pack": "^1.0",
                 "symfony/maker-bundle": "^1.14",
@@ -1342,7 +1343,7 @@
                 "symfony",
                 "toolset"
             ],
-            "time": "2020-02-20T21:24:39+00:00"
+            "time": "2020-03-11T17:05:09+00:00"
         },
         {
             "name": "mazarini/user-bundle",
@@ -1350,12 +1351,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mazarini/user-bundle.git",
-                "reference": "53fbb3083245d9447658c4a4596432031d01244f"
+                "reference": "da6515858673d441df37ff6c6321c422663dd302"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mazarini/user-bundle/zipball/53fbb3083245d9447658c4a4596432031d01244f",
-                "reference": "53fbb3083245d9447658c4a4596432031d01244f",
+                "url": "https://api.github.com/repos/mazarini/user-bundle/zipball/da6515858673d441df37ff6c6321c422663dd302",
+                "reference": "da6515858673d441df37ff6c6321c422663dd302",
                 "shasum": ""
             },
             "require": {
@@ -1410,7 +1411,7 @@
                 "GPL-3.0-or-later"
             ],
             "description": "Minimal bundle to manage user and control access",
-            "time": "2020-02-20T19:35:30+00:00"
+            "time": "2020-03-14T12:49:34+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -2800,16 +2801,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v5.0.4",
+            "version": "v5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "2832d8cffc3a91df550ac42bcdce602f8c08be3e"
+                "reference": "26fb006a2c7b6cdd23d52157b05f8414ffa417b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/2832d8cffc3a91df550ac42bcdce602f8c08be3e",
-                "reference": "2832d8cffc3a91df550ac42bcdce602f8c08be3e",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/26fb006a2c7b6cdd23d52157b05f8414ffa417b6",
+                "reference": "26fb006a2c7b6cdd23d52157b05f8414ffa417b6",
                 "shasum": ""
             },
             "require": {
@@ -2851,7 +2852,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2020-01-31T09:13:47+00:00"
+            "time": "2020-03-30T14:14:32+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -3084,16 +3085,16 @@
         },
         {
             "name": "symfony/mime",
-            "version": "v5.0.4",
+            "version": "v5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "2a3c7fee1f1a0961fa9cf360d5da553d05095e59"
+                "reference": "481b7d6da88922fb1e0d86a943987722b08f3955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/2a3c7fee1f1a0961fa9cf360d5da553d05095e59",
-                "reference": "2a3c7fee1f1a0961fa9cf360d5da553d05095e59",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/481b7d6da88922fb1e0d86a943987722b08f3955",
+                "reference": "481b7d6da88922fb1e0d86a943987722b08f3955",
                 "shasum": ""
             },
             "require": {
@@ -3142,7 +3143,7 @@
                 "mime",
                 "mime-type"
             ],
-            "time": "2020-01-04T14:08:26+00:00"
+            "time": "2020-03-27T16:56:45+00:00"
         },
         {
             "name": "symfony/options-resolver",
@@ -3258,16 +3259,16 @@
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.14.0",
+            "version": "v1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
-                "reference": "6842f1a39cf7d580655688069a03dd7cd83d244a"
+                "reference": "47bd6aa45beb1cd7c6a16b7d1810133b728bdfcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/6842f1a39cf7d580655688069a03dd7cd83d244a",
-                "reference": "6842f1a39cf7d580655688069a03dd7cd83d244a",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/47bd6aa45beb1cd7c6a16b7d1810133b728bdfcf",
+                "reference": "47bd6aa45beb1cd7c6a16b7d1810133b728bdfcf",
                 "shasum": ""
             },
             "require": {
@@ -3281,7 +3282,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -3316,20 +3317,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-01-17T12:01:36+00:00"
+            "time": "2020-03-09T19:04:49+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.14.0",
+            "version": "v1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2"
+                "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/34094cfa9abe1f0f14f48f490772db7a775559f2",
-                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
+                "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
                 "shasum": ""
             },
             "require": {
@@ -3341,7 +3342,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -3375,7 +3376,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-01-13T11:15:53+00:00"
+            "time": "2020-03-09T19:04:49+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
@@ -5022,35 +5023,42 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mazarini/test-bundle.git",
-                "reference": "59eb96e6f88152e667d10477795f913288cc0dfa"
+                "reference": "c8f61da865b68c82e91eacdf6fb85996e6d5edf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mazarini/test-bundle/zipball/59eb96e6f88152e667d10477795f913288cc0dfa",
-                "reference": "59eb96e6f88152e667d10477795f913288cc0dfa",
+                "url": "https://api.github.com/repos/mazarini/test-bundle/zipball/c8f61da865b68c82e91eacdf6fb85996e6d5edf5",
+                "reference": "c8f61da865b68c82e91eacdf6fb85996e6d5edf5",
                 "shasum": ""
             },
             "require": {
+                "doctrine/doctrine-bundle": "^2.0",
+                "doctrine/orm": "^2.7",
                 "ext-ctype": "*",
                 "ext-iconv": "*",
                 "ext-mbstring": "*",
-                "mazarini/tools-bundle": "^0.9|^1.0@dev",
+                "mazarini/bootstrap-bundle": "^1.0dev",
+                "mazarini/pagination-bundle": "^1.0@dev",
+                "mazarini/tools-bundle": "^1.0dev",
                 "php": "^7.2|^8.0",
-                "symfony/console": "^4.4|^5.0",
+                "sensio/framework-extra-bundle": "^5.5",
+                "symfony/apache-pack": "^1.0",
                 "symfony/dotenv": "^4.4|^5.0",
                 "symfony/flex": "^1.6",
-                "symfony/framework-bundle": "^4.4|^5.0",
-                "symfony/translation": "^4.4|^5.0",
+                "symfony/form": "^4.4|^5.0",
+                "symfony/security-bundle": "^4.4|^5.0",
+                "symfony/security-csrf": "^4.4|^5.0",
+                "symfony/twig-pack": "^1.0",
+                "symfony/validator": "^4.4|^5.0",
                 "symfony/yaml": "^4.4|^5.0"
             },
             "conflict": {
                 "symfony/symfony": "*"
             },
             "require-dev": {
-                "doctrine/doctrine-bundle": "^2.0",
-                "doctrine/orm": "^2.7",
-                "mazarini/bootstrap-bundle": "^0.9|^1.0@dev",
-                "mazarini/package": "^1.1",
+                "dama/doctrine-test-bundle": "^6.2",
+                "doctrine/doctrine-fixtures-bundle": "^3.3",
+                "mazarini/package": "^1.0@dev",
                 "symfony/debug-pack": "^1.0",
                 "symfony/maker-bundle": "^1.14",
                 "symfony/test-pack": "^1.0"
@@ -5087,7 +5095,7 @@
                 "symfony",
                 "test"
             ],
-            "time": "2020-02-20T08:26:15+00:00"
+            "time": "2020-03-11T17:16:29+00:00"
         },
         {
             "name": "monolog/monolog",
